@@ -1,0 +1,30 @@
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include('./partials/header') %>
+            <div class="conteiner">
+                <h1>Login</h1>
+                <div class="row">
+                    <div class="col-6 mx-auto">
+                        <div class="card">
+                            <div class="car-body">
+                                <form action="/admin">
+                                    <div class="mb-3">
+                                        <label for="user" class="form-label">Nombre</label>
+                                        <input type="text" name="user" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <%- include('./partials/footer') %>
+    </body>
+
+    </html>

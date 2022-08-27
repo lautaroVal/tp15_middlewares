@@ -1,0 +1,33 @@
+<%- include('./partials/head') %> 
+<body>
+	<%- include('./partials/header') %> 
+    <div class="conteiner">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <div class="card shadow">
+                    <h3>No tienes los privilegios para ingresar</h3>
+                    <button id="btn-muted" class="btn btn-outline-dark active"><i class="fas fa-volume-mute"></i></button>
+                    <div class="card-body">
+                        <video muted autoplay loop width="80%" src="https://c.tenor.com/iROp8uu-48IAAAPo/bloodbros-error.mp4"></video>
+                    </div>
+                    <a href="/" style="text-decoration:none">Volver al home!!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<%- include('./partials/footer') %> 
+    <script>
+        document.getElementById('btn-muted').addEventListener('click', function(e){
+            this.classList.toggle('btn-outline-dark');
+            let video = document.querySelector('video')
+            if (video.muted){
+                video.muted = false
+            }else {
+                video.muted = true
+            }
+        })
+
+    </script>
+</body>
+</html>
